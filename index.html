@@ -217,7 +217,7 @@
         <div class="w-px h-8 bg-ink/10"></div>
         <div><p class="text-ink font-semibold text-sm">RGCET</p><p class="mt-0.5">College</p></div>
         <div class="w-px h-8 bg-ink/10"></div>
-        <div><p class="text-ink font-semibold text-sm">3+</p><p class="mt-0.5">Skills</p></div>
+        <div><p class="text-ink font-semibold text-sm">5+</p><p class="mt-0.5">Skills</p></div>
       </div>
     </div>
 
@@ -300,30 +300,55 @@
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <div class="lift glass-strong rounded-3xl p-7" data-aos="zoom-in" data-aos-delay="0">
         <i class="devicon-java-plain colored icon-pop text-4xl mb-4 inline-block"></i>
-        <h3 class="font-display font-semibold text-ink mb-1">Core Java</h3>
-        <p class="text-sm text-ink/55">OOP fundamentals, collections, and problem-solving.</p>
+        <h3 class="font-display font-semibold text-ink mb-1">Advanced Java</h3>
+        <p class="text-sm text-ink/55">OOP Fundamentals, Collections Framework, Exception Handling, Multithreading, and Problem-Solving..</p>
       </div>
+
+      <!-- NEW: Spring Boot -->
       <div class="lift glass-strong rounded-3xl p-7" data-aos="zoom-in" data-aos-delay="80">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/spring/spring-original.svg"
+             alt="Spring Boot" class="icon-pop w-10 h-10 object-contain mb-4 inline-block" loading="lazy">
+        <h3 class="font-display font-semibold text-ink mb-1">Spring Boot</h3>
+        <p class="text-sm text-ink/55">REST APIs and backend services with Java.</p>
+      </div>
+
+      <!-- NEW: MySQL -->
+      <div class="lift glass-strong rounded-3xl p-7" data-aos="zoom-in" data-aos-delay="160">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg"
+             alt="MySQL" class="icon-pop w-10 h-10 object-contain mb-4 inline-block" loading="lazy">
+        <h3 class="font-display font-semibold text-ink mb-1">MySQL</h3>
+        <p class="text-sm text-ink/55">Relational database design, queries, and joins.</p>
+      </div>
+
+      <!-- NEW: Postman -->
+      <div class="lift glass-strong rounded-3xl p-7" data-aos="zoom-in" data-aos-delay="240">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postman/postman-original.svg"
+             alt="Postman" class="icon-pop w-10 h-10 object-contain mb-4 inline-block" loading="lazy">
+        <h3 class="font-display font-semibold text-ink mb-1">Postman</h3>
+        <p class="text-sm text-ink/55">Testing and debugging APIs before deployment.</p>
+      </div>
+
+      <div class="lift glass-strong rounded-3xl p-7" data-aos="zoom-in" data-aos-delay="320">
         <i class="devicon-html5-plain colored icon-pop text-4xl mb-4 inline-block"></i>
         <h3 class="font-display font-semibold text-ink mb-1">HTML</h3>
         <p class="text-sm text-ink/55">Semantic, accessible markup for the web.</p>
       </div>
-      <div class="lift glass-strong rounded-3xl p-7" data-aos="zoom-in" data-aos-delay="160">
+      <div class="lift glass-strong rounded-3xl p-7" data-aos="zoom-in" data-aos-delay="400">
         <i class="devicon-css3-plain colored icon-pop text-4xl mb-4 inline-block"></i>
         <h3 class="font-display font-semibold text-ink mb-1">CSS</h3>
         <p class="text-sm text-ink/55">Responsive layouts, animation and design systems.</p>
       </div>
-      <div class="lift glass-strong rounded-3xl p-7" data-aos="zoom-in" data-aos-delay="240">
+      <div class="lift glass-strong rounded-3xl p-7" data-aos="zoom-in" data-aos-delay="480">
         <i class="devicon-javascript-plain colored icon-pop text-4xl mb-4 inline-block"></i>
         <h3 class="font-display font-semibold text-ink mb-1">JavaScript</h3>
         <p class="text-sm text-ink/55">Interactive, dynamic front-end behaviour.</p>
       </div>
-      <div class="lift glass-strong rounded-3xl p-7" data-aos="zoom-in" data-aos-delay="320">
+      <div class="lift glass-strong rounded-3xl p-7" data-aos="zoom-in" data-aos-delay="560">
         <i class="fa-solid fa-clapperboard icon-pop text-4xl mb-4 text-accent inline-block"></i>
         <h3 class="font-display font-semibold text-ink mb-1">Video Editing</h3>
         <p class="text-sm text-ink/55">Cutting and polishing engaging video content.</p>
       </div>
-      <div class="lift glass-strong rounded-3xl p-7" data-aos="zoom-in" data-aos-delay="400">
+      <div class="lift glass-strong rounded-3xl p-7" data-aos="zoom-in" data-aos-delay="640">
         <i class="fa-solid fa-wand-magic-sparkles icon-pop text-4xl mb-4 text-accent inline-block"></i>
         <h3 class="font-display font-semibold text-ink mb-1">Photo Designing</h3>
         <p class="text-sm text-ink/55">Clean visual design and photo composition.</p>
@@ -565,23 +590,38 @@
     sections.forEach(s => sectionObserver.observe(s));
 
     /* ---------- Marquee ---------- */
+    const DEV = 'https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons';
+
     const marqueeItems = [
       { icon: 'devicon-java-plain colored', label: 'Java' },
+      { img: `${DEV}/spring/spring-original.svg`, label: 'Spring Boot' },
+      { img: `${DEV}/mysql/mysql-original.svg`,   label: 'MySQL' },
       { icon: 'devicon-html5-plain colored', label: 'HTML5' },
       { icon: 'devicon-css3-plain colored', label: 'CSS3' },
       { icon: 'devicon-javascript-plain colored', label: 'JavaScript' },
+      { icon: 'devicon-git-plain colored', label: 'Git' },
+      { icon: 'devicon-github-original', label: 'GitHub' },
+      { img: `${DEV}/postman/postman-original.svg`,   label: 'Postman' }
     ];
+
     const track = document.getElementById('marqueeTrack');
+
     function buildSet(){
       const frag = document.createDocumentFragment();
       marqueeItems.forEach(item => {
         const el = document.createElement('div');
         el.className = 'marquee-item flex items-center gap-3 shrink-0 text-ink/70 font-display font-semibold text-lg';
-        el.innerHTML = `<i class="${item.icon} text-3xl"></i> ${item.label} <span class="text-accent/50 ml-2">&#10022;</span>`;
+
+        const iconHTML = item.img
+                ? `<img src="${item.img}" alt="${item.label}" class="w-8 h-8 object-contain" loading="lazy">`
+                : `<i class="${item.icon} text-3xl"></i>`;
+
+        el.innerHTML = `${iconHTML} ${item.label} <span class="text-accent/50 ml-2">&#10022;</span>`;
         frag.appendChild(el);
       });
       return frag;
     }
+
     track.appendChild(buildSet());
     track.appendChild(buildSet());
 
